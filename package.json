@@ -9,6 +9,7 @@
     "fix": "npm run lint -- --fix",
     "integration": "jest --config jest.integration.js --maxWorkers=2",
     "lint": "eslint . -c .eslintrc.yaml --no-eslintrc --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint",
+    "postinstall": "npm i lerna ./core/lerna",
     "pretest": "npm run lint",
     "test": "jest"
   },
@@ -21,9 +22,7 @@
   "bin": {
     "lerna": "core/lerna/cli.js"
   },
-  "dependencies": {
-    "lerna": "file:core/lerna"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@lerna-test/calls-back": "file:helpers/calls-back",
     "@lerna-test/cli-runner": "file:helpers/cli-runner",
