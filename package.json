@@ -22,7 +22,9 @@
   "bin": {
     "lerna": "core/lerna/cli.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "lerna": "file:core/lerna"
+  },
   "devDependencies": {
     "@lerna-test/calls-back": "file:helpers/calls-back",
     "@lerna-test/cli-runner": "file:helpers/cli-runner",
@@ -86,7 +88,9 @@
     "tempy": "^0.2.1",
     "touch": "^3.1.0",
     "write-json-file": "^3.2.0",
-    "yargs": "^14.2.2"
+    "yargs": "^14.2.2",
+    "import-local": "^2.0.0",
+    "npmlog": "^4.1.2"
   },
   "engines": {
     "node": ">= 6.9.0"
