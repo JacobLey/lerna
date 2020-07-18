@@ -9,7 +9,7 @@
     "fix": "npm run lint -- --fix",
     "integration": "jest --config jest.integration.js --maxWorkers=2",
     "lint": "eslint . -c .eslintrc.yaml --no-eslintrc --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint",
-    "postinstall": "npm explore lerna --silent || npm i lerna ./core/lerna",
+    "postinstall": "npm explore @lerna --silent || npm i lerna ./core/lerna",
     "pretest": "npm run lint",
     "test": "jest"
   },
