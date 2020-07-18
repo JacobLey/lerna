@@ -22,6 +22,9 @@
   "bin": {
     "lerna": "core/lerna/cli.js"
   },
+  "dependencies": {
+    "import-local": "^2.0.0"
+  },
   "devDependencies": {
     "@lerna-test/calls-back": "file:helpers/calls-back",
     "@lerna-test/cli-runner": "file:helpers/cli-runner",
